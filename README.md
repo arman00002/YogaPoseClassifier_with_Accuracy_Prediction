@@ -1,5 +1,5 @@
-Yoga Pose Classification with Accuarcy Prediciton.
-This project uses MediaPipe to extract human body landmarks from yoga pose images and videos, and classifies the poses using a RandomForestClassifier trained on pose landmark features.
+## Yoga Pose Classification with Accuarcy Prediciton.
+## This project uses MediaPipe to extract human body landmarks from yoga pose images and videos, and classifies the poses using a RandomForestClassifier trained on pose landmark features.
 InternshipProject
  |──
    ├── models/                  # Trained model files (.pkl)
@@ -13,13 +13,13 @@ InternshipProject
    ├── video_testing.py        # Tests on videos with live pose detection
    ├── webcam_testing.py       # Real-time webcam-based pose classification
 
-Features:
+## Features:
 -Uses MediaPipe Pose to extract 33 body landmarks.
 -Each pose is represented using 132 features: (x, y, z, visibility) × 33.
 -Pose classifier is trained using RandomForestClassifier.
 -Displays pose name and confidence on screen.
 
-Notes:
+## Notes:
 -Landmark normalization was tested but found to reduce accuracy, so current model uses raw landmark coordinates.
 -Accuracy ranges from 80–100% for clean, full-body yoga pose images.
 
